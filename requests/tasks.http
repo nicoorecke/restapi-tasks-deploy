@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "HOla que onda",
+    "description": "tu mamamaa",
+    "done": true
+}
+
+###
+GET http://localhost:3000/api/tasks/6046ab255ce11215f4314e17
+
+###
+GET http://localhost:3000/api/tasks?page=0&size=2
+
+###
+DELETE http://localhost:3000/api/tasks/6046ab255ce11215f4314e19
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/6042847c35c4eb075c9e9908
+Content-Type: application/json
+
+{
+    "title": "CREAR EN WIX"
+}
